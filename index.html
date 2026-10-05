@@ -3,100 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEE NEWS - الحقيقة ... دائماً أقرب</title>
+    <title>BEE NEWS - فندق الجديد على صفيح ساخن قبل الأمطار</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f6f9; color: #333; direction: rtl; text-align: right; }
-        header { background: #002b49; color: #fff; padding: 10px 0; border-bottom: 4px solid #ffcc00; }
-        .top-bar { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 15px; font-size: 14px; }
-        .logo-container { text-align: center; padding: 15px 0; background: linear-gradient(135deg, #002b49, #004080); color: white; }
-        .logo-container h1 { font-size: 36px; color: #ffcc00; font-weight: bold; }
-        .logo-container p { font-size: 14px; color: #ddd; margin-top: 5px; }
-        nav { background: #002b49; display: flex; justify-content: center; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.1); }
-        nav a { color: white; padding: 12px 18px; text-decoration: none; font-weight: 600; transition: 0.3s; }
-        nav a:hover, nav a.active { background: #ffcc00; color: #002b49; }
-        .breaking-news { background: #e60000; color: white; padding: 10px 15px; display: flex; align-items: center; max-width: 1200px; margin: 15px auto; border-radius: 4px; font-weight: bold; }
-        .breaking-tag { background: #fff; color: #e60000; padding: 2px 8px; border-radius: 3px; margin-left: 10px; font-size: 13px; }
-        .container { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 0 15px; }
-        .main-article { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .main-article img { width: 100%; height: 350px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
-        .main-article h2 { font-size: 24px; color: #002b49; margin-bottom: 10px; }
-        .main-article p { color: #666; line-height: 1.6; }
-        .sidebar { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .sidebar h3 { font-size: 18px; color: #002b49; border-bottom: 2px solid #ffcc00; padding-bottom: 8px; margin-bottom: 15px; }
-        .sidebar-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; font-size: 14px; }
-        .sidebar-item span { display: block; color: #e60000; font-size: 12px; margin-bottom: 3px; }
-        footer { background: #001829; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 14px; }
-        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Tahoma, Arial, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background: #002b49; color: #fff; padding: 15px; text-align: center; }
+        .logo-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 5px; }
+        .logo-container img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid #ffcc00; }
+        .logo h1 { font-size: 28px; color: #ffcc00; }
+        .logo p { font-size: 13px; color: #ddd; }
+        .container { max-width: 800px; margin: 20px auto; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .article-category { background: #e60000; color: white; padding: 4px 10px; border-radius: 4px; font-size: 12px; display: inline-block; margin-bottom: 10px; }
+        h2 { font-size: 22px; color: #002b49; margin-bottom: 15px; }
+        .date { font-size: 12px; color: #777; margin-bottom: 15px; display: block; }
+        .article-image { width: 100%; height: 350px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; }
+        .content p { margin-bottom: 15px; font-size: 16px; color: #444; text-align: justify; }
+        .footer { text-align: center; margin-top: 30px; padding: 15px; background: #002b49; color: white; font-size: 13px; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="top-bar">
-            <span>السبت 26 أريل 2025 | 22° تونس</span>
-            <div>
-                <a href="#" style="color: white; margin-left: 15px; text-decoration: none;">من نحن</a>
-                <a href="#" style="color: white; text-decoration: none;">اتصل بنا</a>
+        <div class="logo-container">
+            <!-- شعار النحلة -->
+            <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=200&q=80" alt="BEE NEWS Logo">
+            <div class="logo">
+                <h1>BEE NEWS</h1>
             </div>
         </div>
+        <p>الخبر الأقرب إلى الحقيقة</p>
     </header>
 
-    <div class="logo-container">
-        <h1>BEE NEWS</h1>
-        <p>الحقيقة ... دائماً أقرب</p>
-    </div>
-
-    <nav>
-        <a href="#" class="active">الرئيسية</a>
-        <a href="#">تونس</a>
-        <a href="#">سياسة</a>
-        <a href="#">اقتصاد</a>
-        <a href="#">مجتمع</a>
-        <a href="#">رياضة</a>
-        <a href="#">ثقافة</a>
-        <a href="#">تكنولوجيا</a>
-        <a href="#">العالم</a>
-        <a href="#">فيديو</a>
-    </nav>
-
-    <div class="breaking-news">
-        <span class="breaking-tag">عاجل</span>
-        <p>أعوان الحماية المدنية يواصلون البحث عن مفقودين إثر فيضان وادي مجردة...</p>
-    </div>
-
     <div class="container">
-        <div class="main-article">
-            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" alt="صورة الخبر الرئيسي">
-            <span style="background: #e60000; color: white; padding: 3px 8px; border-radius: 3px; font-size: 12px;">تونس</span>
-            <h2 style="margin-top: 10px;">رئيس الجمهورية يؤكد على ضرورة دعم الاستقرار السياسي وتعزيز مسار الإصلاح</h2>
-            <p>شدد رئيس الجمهورية، خلال لقائه برئيس الحكومة، على أهمية مواصلة جهود الإصلاح وتحقيق الاستقرار السياسي والاقتصادى في البلاد، مع ضرورة الإحاطة بالفئات الهشة وتوفير الظروف الملائمة للتنمية الجهوية.</p>
-        </div>
+        <span class="article-category">شأن محلي ومجتمعي</span>
+        <h2>فندق الجديد على صفيح ساخن: هل تتكرر مأساة الفيضانات وتعطل مصالح المواطنين مع أول قطرة مطر؟</h2>
+        <span class="date">📅 5 أكتوبر 2026</span>
 
-        <div class="sidebar">
-            <h3>أحدث الأخبار</h3>
-            <div class="sidebar-item">
-                <span>منذ 15 دقيقة</span>
-                تونس تشارك في اجتماع وزراء الداخلية العرب بالقاهرة
-            </div>
-            <div class="sidebar-item">
-                <span>منذ 32 دقيقة</span>
-                إحباط محاولة تهريب كمية من المخدرات بميناء رادس
-            </div>
-            <div class="sidebar-item">
-                <span>منذ ساعة</span>
-                وزارة الفلاحة: تحسن في نسبة تزويد الأسواق بالخضر والغلال
-            </div>
-            <div class="sidebar-item">
-                <span>منذ ساعتين</span>
-                إطلاق برنامج وطني لدعم المؤسسات الصغرى والمتوسطة
-            </div>
+        <!-- صورة المقال المعبرة عن الأمطار والبنية التحتية -->
+        <img src="https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=800&q=80" alt="صورة الأمطار والطرقات" class="article-image">
+
+        <div class="content">
+            <p>مع اقتراب فصل الشتاء ونزول الغيث النافع، تعود إلى أذهان متساكني منطقة <strong>فندق الجديد</strong> كوابيس السنوات الفارطة، وتتجدد التساؤلات المشروعة والمحملة بالغضب والحيرة: <em>هل سيُترك المواطنون ككل مرة يصارعون المياه، وهل سيبقى التلاميذ والطلبة عاجزين عن الالتحاق بمقاعد الدراسة، ويبقى العمال رهيني بيوتهم لغياب وسائل النقل تماماً فور تفرّع مياه الأمطار وغرق الطرقات؟</em></p>
+            
+            <p>واقع البنية التحتية الهش في المنطقة يجعل كل هطول للأمطار بمثابة إعلان شلل تام لحركة المرور والحياة اليومية. المشاهد المتكررة لأهالي المنطقة وهم يخوضون المياه بأقدامهم، وتوقف حركة الحافلات والمواصلات العمومية والخاصة، تعكس عمق الأزمة وغياب الحلول الجذرية العاجلة لحماية المنطقة من العزلة المتكررة.</p>
+
+            <p>وأمام هذه الوضعية المزرية، يبقى السؤال الملح موجهاً إلى الجهات المعنية والسلطات المحلية: <strong>أين هي الاستعدادات الفعلية لفترة الشتاء؟ وهل تم تنظيف مجاري المياه، وتهيئة قنوات تصريف مياه الأمطار، أم أن سيناريو الترقيع وإطلاق الوعود الخاوية هو الفيصل كالعادة؟</strong></p>
+
+            <p>أهالي فندق الجديد يطلقون صيحة فزع مبكرة، مؤكدين أن الصبر بلغ حدّه، وأنهم ينتظرون تحركاً عاجلاً وميدانياً يضمن حقهم الأساسي في التنقل، وحق أبنائهم في التعليم في ظروف تحفظ كرامتهم الإنسانية بعيداً عن مشاهد البرك والمستنقعات.</p>
         </div>
     </div>
 
-    <footer>
-        <p>جميع الحقوق محفوظة © 2026 BEE NEWS</p>
-    </footer>
+    <div class="footer">
+        <p>جميع الحقوق محفوظة © 2026 - بوابة BEE NEWS الإخبارية</p>
+    </div>
 
 </body>
 </html>
